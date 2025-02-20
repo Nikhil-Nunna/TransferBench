@@ -118,6 +118,7 @@ def main():
     with open("Bandwidth_per_cu.csv", 'w') as f:
         combined_df.to_csv(f, index_label='CU Count')
         f.write('\n\n\n')  # Add a few empty rows
+    with open("Bandwidth_heatmap.csv", 'a') as f:
         df.to_csv(f)
 
 if __name__ == "__main__":
